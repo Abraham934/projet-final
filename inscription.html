@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription - CarXpress</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family:'Corbel', sans-serif;
+      background-color: #000;
+      color: white;
+      text-align: center;
+      padding: 50px;
+      margin: 0;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 400px;
+      padding: 20px;
+    }
+
+    .form-inscription {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;  
+      object-fit: cover;  
+      margin-bottom: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .form-inscription h2 {
+      margin-bottom: 20px;
+    }
+
+    .form-inscription input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-inscription button {
+      width: 100%;
+      padding: 10px;
+      background-color: #e60000;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .form-inscription button:hover {
+      background-color: #cc0000;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form class="form-inscription">
+      <img src="images/logo.png" alt="Logo AutoLux" class="logo">
+      <h2>Créer un compte</h2>
+      <input type="text" placeholder="Nom complet" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Mot de passe" required>
+      <input type="password" placeholder="Confirmer le mot de passe" required>
+      <button type="submit">S'inscrire</button>
+    </form>
+  </div>
+</body>
+</html>
