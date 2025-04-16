@@ -3,10 +3,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* Applique la police Corbel à toute la page */
-body {
-  font-family: 'Corbel', sans-serif; /* Corbel avec une alternative en cas d'indisponibilité */
 }
+  
+body {
+  font-family: 'Corbel', sans-serif; 
 
 }
 
@@ -49,6 +49,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 
 .logo .autolux-logo {
@@ -223,63 +224,31 @@ nav ul li a:hover {
   object-fit: contain;
 }
 
-/* ======= CONTACT ======= */
-
-/* Section Contact */
-.contact-section {
-  padding: 60px 0;
-  background-color: #fff;
-}
-
-.contact-section .small-container {
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.contact-section .title {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.contact-form {
+.form-contact {
   display: flex;
   flex-direction: column;
-  max-width: 450px;
+  gap: 15px;
+  max-width: 500px;
   margin: 0 auto;
-  padding: 15px;
-  background-color: #f7f7f7;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
-.contact-form input,
-.contact-form textarea {
-  padding: 10px;
-  margin-bottom: 12px;
+.form-contact input,
+.form-contact textarea {
+  padding: 20px;
+  border-radius: 5px;
   border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 14px;
-  width: 100%;
+  font-family: 'Corbel', sans-serif;
 }
 
-.contact-form textarea {
-  resize: vertical;
-}
-
-.contact-form button {
-  background-color: #f44336;
+.form-contact button {
+  padding: 10px;
+  background-color: #e60000;
   color: white;
-  padding: 10px 16px;
   border: none;
-  border-radius: 6px;
-  font-size: 16px;
+  border-radius: 5px;
+  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-  background-color: #d32f2f;
 }
 
 
@@ -347,7 +316,7 @@ hr {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #f44336; /* Couleur rouge (modifiable) */
+  background-color: #f44336; 
   color: white;
   border: none;
   border-radius: 50%;
@@ -360,17 +329,33 @@ hr {
 }
 
 #back-to-top:hover {
-  background-color: #d32f2f; /* Couleur rouge foncé au survol */
-  transform: scale(1.1); /* Légère augmentation de la taille au survol */
+  background-color: #d32f2f; 
+  transform: scale(1.1); 
 }
 
 #back-to-top:focus {
-  outline: none; /* Retirer la bordure de focus */
+  outline: none; 
 }
 
-/* Augmenter la taille des prix en CFA pour qu'ils ressortent mieux */
+
 section#voitures p {
-  font-size: 1.2rem;  /* Ajuster la taille selon ton design */
+  font-size: 1.2rem;  
   font-weight: bold;
-  color: #f39c12;  /* Couleur d'accent, par exemple or pour attirer l'attention */
+  color: #f39c12;  
 }
+
+.btn-inscrire {
+  background-color: #e60000;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Corbel', sans-serif !important;
+}
+
+.btn-inscrire:hover {
+  background-color: #cc0000;
+}
+
+
